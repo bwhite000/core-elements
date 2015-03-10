@@ -11,7 +11,7 @@ SVGs for the core-icons).
 This is an exciting, learning side project that will have more good improvements soon!
 
 ## Example
-__/main.dart__
+__main.dart__
 
 ```dart
 import "dart:html";
