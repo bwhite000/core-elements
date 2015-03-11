@@ -2,15 +2,18 @@
 
 A collection of core custom elements not requiring a Polymer overhead based on the
 Google Polymer project by the similar name, but with a bunch of optimization and
-pruning for projects that are looking for a slimmer version.
+pruning for projects that are looking for a slimmer implementation. This is a Dart package
+that can be imported into other Dart or JS projects to add some custom elements.
 
-Some pieces are similar to, and others are loosely based on Google's base concepts.
+Some pieces are similar to, and others are roughly based on Google's base concepts.
 Don't think of it as a rehash, but a bwhite000 mod built from scratch (besides the
-SVGs for the core-icons).
+SVGs scraped and cleaned for the core-icons).
 
 This is an exciting, learning side project that will have more good improvements soon!
 
 ## Example
+Follow these sample files in your Dart or JS project to include the CoreElements package:
+
 __pubspec.yaml__ - Add the package as a dependency.
 
 ```yaml
