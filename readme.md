@@ -1,9 +1,9 @@
 # CoreElements
 
-A collection of core custom elements not requiring a Polymer overhead based on the
-Google Polymer project by the similar name, but with a bunch of optimization and
-pruning for projects that are looking for a slimmer implementation. This is a Dart package
-that can be imported into other Dart or JS projects to add some custom elements.
+A collection of core custom elements not requiring a Polymer overhead inspired by the
+[Google Polymer project by the similar name](https://www.polymer-project.org/0.5/docs/elements/core-ajax.html),
+but with a bunch of optimization and pruning for a slimmer implementation. This is a
+Dart package that can be imported into other Dart or JS projects to add some custom elements.
 
 Some pieces are similar to, and others are roughly based on Google's base concepts.
 Don't think of it as a rehash, but a bwhite000 mod built from scratch (besides the
