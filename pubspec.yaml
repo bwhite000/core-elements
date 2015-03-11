@@ -3,3 +3,5 @@ version: 0.0.6
 author: Brandon White
 description: A set of core custom elements. Based on the Google Polymer project of a similar name (https://www.polymer-project.org/0.5/docs/elements/).
 homepage: http://jennex.it/now/dev/
+environment:
+  sdk: '>=1.8.5 <2.0.0'

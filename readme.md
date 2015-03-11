@@ -11,7 +11,34 @@ SVGs for the core-icons).
 This is an exciting, learning side project that will have more good improvements soon!
 
 ## Example
-__main.dart__
+__pubspec.yaml__ - Add the package as a dependency.
+
+```yaml
+...
+dependencies:
+  core_elements:
+    git: git://github.com/bwhite000/core-elements.git
+```
+
+__web/index.html__ - Setup the imports and scripts.
+
+```html
+<!doctype html>
+<html>
+    <head>
+        <title>Core Elements Demo</title>
+        
+        <import rel="import" href="packages/core_elements/core_icon.html" />
+        
+        <script type="application/dart" src="main.dart" defer></script>
+    </head>
+    <body>
+        <core-icon icon="default.home"></core-icon>
+    </body>
+</html>
+```
+
+__web/main.dart__ - Activate/register the custom elements.
 
 ```dart
 import "dart:html";
