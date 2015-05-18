@@ -1,6 +1,11 @@
 CoreIcon Changelog
 ==================
 
+v0.0.8 (5.18.2015)
+------------------
+* Updated the paths in the TemplateElement querySelector() path to use the
+  new core_icon package name.
+
 v0.0.7 (5.18.2015)
 --------------------
 * Removed the ShadowRoot, added a global CSS Stylesheet, and now have the SVG

@@ -35,7 +35,7 @@ class CoreIcon extends HtmlElement {
     if (this._icon.contains('.')) {
       iconFrag = this._getIconByCategory();
     } else {
-      iconFrag = ((querySelector(r'link[rel="import"][href$="/core_elements/core_icon.html"]') as LinkElement).import
+      iconFrag = ((querySelector(r'link[rel="import"][href$="/core_icon/core_icon.html"]') as LinkElement).import
           .querySelector('#template_${this._icon}-icon') as TemplateElement).content.clone(true);
     }
 
@@ -49,7 +49,7 @@ class CoreIcon extends HtmlElement {
     final String categoryStr = iconPieces[0];
     final String iconNameStr = iconPieces[1];
 
-    return ((querySelector('link[rel="import"][href\$="/core_elements/core-icons/$categoryStr-icons.html"]') as LinkElement).import
+    return ((querySelector('link[rel="import"][href\$="/core_icon/core-icons/$categoryStr-icons.html"]') as LinkElement).import
         .querySelector('#template_$iconNameStr-icon') as TemplateElement).content.clone(true);
   }
 }
