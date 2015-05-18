@@ -1,7 +1,7 @@
-name: core_elements
-version: 0.0.6
-author: Brandon White
-description: A set of core custom elements. Based on the Google Polymer project of a similar name (https://www.polymer-project.org/0.5/docs/elements/).
-homepage: http://jennex.it/now/dev/
+name: core_icon
+version: 0.0.7
+author: Brandon White <jennexproject@gmail.com>
+description: A set of core icon custom elements. Based on the Google Polymer project CoreIcon of a similar name (https://www.polymer-project.org/0.5/docs/elements/icons.html).
+homepage: https://google.com/+BrandonWhite
 environment:
   sdk: '>=1.8.5 <2.0.0'

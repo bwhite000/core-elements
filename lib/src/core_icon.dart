@@ -1,7 +1,6 @@
 part of CoreElements.lib.coreElements;
 
 class CoreIcon extends HtmlElement {
-  ShadowRoot _shadowRoot;
   String _icon = '';
 
   CoreIcon.created() : super.created();
@@ -9,12 +8,6 @@ class CoreIcon extends HtmlElement {
   @override
   void attached() {
     super.attached();
-
-    final DocumentFragment frag = ((querySelector(r'link[rel="import"][href$="/core_elements/core_icon.html"]') as LinkElement).import
-        .querySelector('#template_core-icon') as TemplateElement).content.clone(true);
-
-    this._shadowRoot = this.createShadowRoot();
-    this._shadowRoot.append(frag);
 
     if (this.attributes.containsKey('icon')) {
       this._determineIcon();
@@ -46,7 +39,7 @@ class CoreIcon extends HtmlElement {
           .querySelector('#template_${this._icon}-icon') as TemplateElement).content.clone(true);
     }
 
-    this._shadowRoot.querySelector('#content')
+    this
         ..innerHtml = ''
         ..append(iconFrag);
   }

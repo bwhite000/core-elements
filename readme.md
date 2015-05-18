@@ -1,4 +1,5 @@
-# CoreElements
+CoreIcon
+========
 
 A collection of core custom elements not requiring a Polymer overhead inspired by the
 [Google Polymer project by the similar name](https://www.polymer-project.org/0.5/docs/elements/core-ajax.html),
@@ -11,17 +12,19 @@ SVGs scraped and cleaned for the core-icons).
 
 This is an exciting, learning side project that will have more good improvements soon!
 
-## Example
+Example
+-------
+
 Follow these sample files in your Dart or JS project to include the CoreElements package:
 
 __pubspec.yaml__ - Add the package as a dependency.
 
-```yaml
+````yaml
 ...
 dependencies:
   core_elements:
     git: git://github.com/bwhite000/core-elements.git
-```
+````
 
 __web/index.html__ - Setup the imports and scripts.
 
@@ -59,9 +62,11 @@ void main() {
   document.body.nodes.add(coreIcon);
 }
 ```
-## Compatibility
 
-This project relys on native support for:
+Compatibility
+-------------
+
+This project relys on native Browser support for:
 * [HTML Imports](http://caniuse.com/#feat=imports)
 * [Templates](http://caniuse.com/#feat=template)
 * [Shadow DOM](http://caniuse.com/#feat=shadowdom)
