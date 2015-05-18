@@ -1,5 +1,5 @@
 name: core_icon
-version: 0.0.7
+version: 0.0.8
 author: Brandon White <jennexproject@gmail.com>
 description: A set of core icon custom elements. Based on the Google Polymer project CoreIcon of a similar name (https://www.polymer-project.org/0.5/docs/elements/icons.html).
 homepage: https://google.com/+BrandonWhite
