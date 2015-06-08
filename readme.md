@@ -23,7 +23,7 @@ __pubspec.yaml__ - Add the package as a dependency.
 ...
 dependencies:
   core_elements:
-    git: git://github.com/bwhite000/core-elements.git
+    git: git://github.com/bwhite000/core-icon.git
 ````
 
 __web/index.html__ - Setup the imports and scripts.
@@ -34,7 +34,7 @@ __web/index.html__ - Setup the imports and scripts.
     <head>
         <title>Core Elements Demo</title>
         
-        <import rel="import" href="packages/core_elements/core_icon.html" />
+        <import rel="import" href="packages/core_icon/core_icon.html" />
         
         <script type="application/dart" src="main.dart" defer></script>
     </head>
@@ -48,14 +48,14 @@ __web/main.dart__ - Activate/register the custom elements.
 
 ```dart
 import "dart:html";
-import "package:core_elements/core_elements.dart" as CoreElements;
+import "package:core_icon/core_elements.dart" as coreIcon;
 
 void main() {
   // Register the custom elements with the Document.
-  CoreElements.registerWithDom();
+  coreIcon.registerWithDom();
 
   // Create the Element.
-  final CoreElements.CoreIcon coreIcon = new Element.tag('core-icon')
+  final coreIcon.CoreIcon coreIcon = new Element.tag('core-icon')
       ..icon = 'default.home';
 
   // Add it to the Body to see it.
